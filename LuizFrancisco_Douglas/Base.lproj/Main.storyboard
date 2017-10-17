@@ -12,7 +12,7 @@
         <!--Total de Compras-->
         <scene sceneID="C0H-Th-Ob1">
             <objects>
-                <viewController id="Rzc-ng-KXt" sceneMemberID="viewController">
+                <viewController id="Rzc-ng-KXt" customClass="TotalComprasViewController" customModule="LuizFrancisco_Douglas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dnV-l6-45T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--Ajustes-->
         <scene sceneID="KgG-Jc-GZf">
             <objects>
-                <viewController id="hRw-vL-1Pv" sceneMemberID="viewController">
+                <viewController id="hRw-vL-1Pv" customClass="AjustesViewController" customModule="LuizFrancisco_Douglas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fsE-CN-j6y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@
         <!--Lista de Compras-->
         <scene sceneID="wBS-0H-NyB">
             <objects>
-                <tableViewController id="uKO-A0-V08" sceneMemberID="viewController">
+                <tableViewController id="uKO-A0-V08" customClass="ComprasTableViewController" customModule="LuizFrancisco_Douglas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pLF-nJ-jak">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
         <!--Cadastrar Produto-->
         <scene sceneID="pIn-wn-uFW">
             <objects>
-                <viewController title="Cadastrar Produto" id="tev-XC-Lbh" sceneMemberID="viewController">
+                <viewController title="Cadastrar Produto" id="tev-XC-Lbh" customClass="CadastrarProdutoViewController" customModule="LuizFrancisco_Douglas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JIV-Op-yKU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E8B6FE31F9584FE00EEC6BF /* ComprasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B6FE21F9584FE00EEC6BF /* ComprasTableViewController.swift */; };
+		2E8B6FE51F95853200EEC6BF /* CadastrarProdutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B6FE41F95853200EEC6BF /* CadastrarProdutoViewController.swift */; };
+		2E8B6FE71F95853D00EEC6BF /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B6FE61F95853D00EEC6BF /* AjustesViewController.swift */; };
+		2E8B6FE91F95855000EEC6BF /* TotalComprasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B6FE81F95855000EEC6BF /* TotalComprasViewController.swift */; };
 		2EE191BB1F7F26BB00F108B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE191BA1F7F26BB00F108B0 /* AppDelegate.swift */; };
 		2EE191C01F7F26BB00F108B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE191BE1F7F26BB00F108B0 /* Main.storyboard */; };
 		2EE191C21F7F26BB00F108B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE191C11F7F26BB00F108B0 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E8B6FE21F9584FE00EEC6BF /* ComprasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasTableViewController.swift; sourceTree = "<group>"; };
+		2E8B6FE41F95853200EEC6BF /* CadastrarProdutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarProdutoViewController.swift; sourceTree = "<group>"; };
+		2E8B6FE61F95853D00EEC6BF /* AjustesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
+		2E8B6FE81F95855000EEC6BF /* TotalComprasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalComprasViewController.swift; sourceTree = "<group>"; };
 		2EE191B71F7F26BB00F108B0 /* LuizFrancisco_Douglas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuizFrancisco_Douglas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE191BA1F7F26BB00F108B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EE191BF1F7F26BB00F108B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +41,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E8B6FE11F9584D800EEC6BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E8B6FE21F9584FE00EEC6BF /* ComprasTableViewController.swift */,
+				2E8B6FE41F95853200EEC6BF /* CadastrarProdutoViewController.swift */,
+				2E8B6FE61F95853D00EEC6BF /* AjustesViewController.swift */,
+				2E8B6FE81F95855000EEC6BF /* TotalComprasViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2EE191AE1F7F26BB00F108B0 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +71,7 @@
 		2EE191B91F7F26BB00F108B0 /* LuizFrancisco_Douglas */ = {
 			isa = PBXGroup;
 			children = (
+				2E8B6FE11F9584D800EEC6BF /* View */,
 				2EE191BA1F7F26BB00F108B0 /* AppDelegate.swift */,
 				2EE191BE1F7F26BB00F108B0 /* Main.storyboard */,
 				2EE191C11F7F26BB00F108B0 /* Assets.xcassets */,
@@ -133,7 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8B6FE71F95853D00EEC6BF /* AjustesViewController.swift in Sources */,
+				2E8B6FE31F9584FE00EEC6BF /* ComprasTableViewController.swift in Sources */,
 				2EE191BB1F7F26BB00F108B0 /* AppDelegate.swift in Sources */,
+				2E8B6FE51F95853200EEC6BF /* CadastrarProdutoViewController.swift in Sources */,
+				2E8B6FE91F95855000EEC6BF /* TotalComprasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
