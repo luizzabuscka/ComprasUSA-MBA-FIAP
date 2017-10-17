@@ -1,24 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pbg-7D-hAX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Total de Compras-->
+        <scene sceneID="C0H-Th-Ob1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Rzc-ng-KXt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dnV-l6-45T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em U$:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-aA-tgw">
+                                <rect key="frame" x="138" y="52" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em R$:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1W-p0-CZ1">
+                                <rect key="frame" x="139" y="161" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f47-JC-Kz9">
+                                <rect key="frame" x="142.5" y="81" width="90" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.83466240284974091" green="0.11938217885143115" blue="0.019869800969511402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaT-Va-7qH">
+                                <rect key="frame" x="142" y="190" width="90" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.79481055699481862" blue="0.064190667973990798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nk8-aA-tgw" firstAttribute="centerX" secondItem="dnV-l6-45T" secondAttribute="centerX" id="1Ri-cO-LCs"/>
+                            <constraint firstItem="f47-JC-Kz9" firstAttribute="centerX" secondItem="dnV-l6-45T" secondAttribute="centerX" id="727-Wy-VC9"/>
+                            <constraint firstItem="X1W-p0-CZ1" firstAttribute="centerX" secondItem="dnV-l6-45T" secondAttribute="centerX" id="IU1-AU-gcM"/>
+                            <constraint firstItem="JaT-Va-7qH" firstAttribute="centerX" secondItem="dnV-l6-45T" secondAttribute="centerX" id="XRm-uN-v6Z"/>
+                            <constraint firstItem="Nk8-aA-tgw" firstAttribute="top" secondItem="grb-A2-AXN" secondAttribute="top" constant="32" id="Y3K-gv-w1J"/>
+                            <constraint firstItem="X1W-p0-CZ1" firstAttribute="top" secondItem="f47-JC-Kz9" secondAttribute="bottom" constant="32" id="ZCg-kG-VsJ"/>
+                            <constraint firstItem="f47-JC-Kz9" firstAttribute="top" secondItem="Nk8-aA-tgw" secondAttribute="bottom" constant="8" id="gp9-AD-PnE"/>
+                            <constraint firstItem="JaT-Va-7qH" firstAttribute="top" secondItem="X1W-p0-CZ1" secondAttribute="bottom" constant="8" id="jWo-0f-LSz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="grb-A2-AXN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Total de Compras" image="ic_check_circle" selectedImage="ic_check_circle" id="Y4c-KR-Wq5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0h-xx-CTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.79999999999995" y="892.80359820089961"/>
+        </scene>
+        <!--Ajustes-->
+        <scene sceneID="KgG-Jc-GZf">
+            <objects>
+                <viewController id="hRw-vL-1Pv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fsE-CN-j6y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lZy-1J-Kmn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="ic_settings" selectedImage="ic_settings" id="2NE-XL-usR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vg7-ZZ-nxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="116"/>
+        </scene>
+        <!--Lista de Compras-->
+        <scene sceneID="wBS-0H-NyB">
+            <objects>
+                <tableViewController id="uKO-A0-V08" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pLF-nJ-jak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vwc-ts-F6y">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vwc-ts-F6y" id="1fG-bT-rC1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uKO-A0-V08" id="0Og-Cq-KJb"/>
+                            <outlet property="delegate" destination="uKO-A0-V08" id="Dxa-XQ-ru8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de Compras" id="4qu-BG-egd">
+                        <barButtonItem key="rightBarButtonItem" image="ic_add_shopping_cart" id="ReI-Or-oBd">
+                            <connections>
+                                <segue destination="tev-XC-Lbh" kind="show" id="hG8-pE-y3I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVw-WN-oXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="-600"/>
+        </scene>
+        <!--Cadastrar Produto-->
+        <scene sceneID="pIn-wn-uFW">
+            <objects>
+                <viewController title="Cadastrar Produto" id="tev-XC-Lbh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JIV-Op-yKU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HpF-Di-e5I"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJl-ai-69A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2782" y="-600"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tz9-Z7-SpS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pbg-7D-hAX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9d7-2A-hNm"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ejy-MS-kTy">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0y6-JW-62O" kind="relationship" relationship="viewControllers" id="8KA-Oc-Ncg"/>
+                        <segue destination="hRw-vL-1Pv" kind="relationship" relationship="viewControllers" id="sCn-Ch-gQi"/>
+                        <segue destination="Rzc-ng-KXt" kind="relationship" relationship="viewControllers" id="1CF-83-dcB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="riU-Fk-6N7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2" y="117"/>
+        </scene>
+        <!--Compras-->
+        <scene sceneID="2T8-G0-fRu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0y6-JW-62O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Compras" image="ic_shopping_cart" selectedImage="ic_shopping_cart" id="wAZ-Yl-zuI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qtT-pt-SJt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uKO-A0-V08" kind="relationship" relationship="rootViewController" id="hf2-pF-Kia"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aaC-FH-1hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="-600"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_add_shopping_cart" width="24" height="24"/>
+        <image name="ic_check_circle" width="24" height="24"/>
+        <image name="ic_settings" width="24" height="24"/>
+        <image name="ic_shopping_cart" width="24" height="24"/>
+    </resources>
 </document>
