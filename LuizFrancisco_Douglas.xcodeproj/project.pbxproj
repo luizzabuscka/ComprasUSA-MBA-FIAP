@@ -11,6 +11,10 @@
 		2E8B6FE51F95853200EEC6BF /* CadastrarProdutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B6FE41F95853200EEC6BF /* CadastrarProdutoViewController.swift */; };
 		2E8B6FE71F95853D00EEC6BF /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B6FE61F95853D00EEC6BF /* AjustesViewController.swift */; };
 		2E8B6FE91F95855000EEC6BF /* TotalComprasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8B6FE81F95855000EEC6BF /* TotalComprasViewController.swift */; };
+		2EAD3CDD1F9C89A100AD88C0 /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3CDB1F9C89A100AD88C0 /* ComprasUSA.xcdatamodeld */; };
+		2EAD3CE11F9C926D00AD88C0 /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3CE01F9C926D00AD88C0 /* ProductDAO.swift */; };
+		2EAD3CE31F9CAA7500AD88C0 /* StateDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3CE21F9CAA7500AD88C0 /* StateDAO.swift */; };
+		2EAD3CE51F9D16DF00AD88C0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD3CE41F9D16DF00AD88C0 /* Settings.bundle */; };
 		2EE191BB1F7F26BB00F108B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE191BA1F7F26BB00F108B0 /* AppDelegate.swift */; };
 		2EE191C01F7F26BB00F108B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE191BE1F7F26BB00F108B0 /* Main.storyboard */; };
 		2EE191C21F7F26BB00F108B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE191C11F7F26BB00F108B0 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 		2E8B6FE41F95853200EEC6BF /* CadastrarProdutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarProdutoViewController.swift; sourceTree = "<group>"; };
 		2E8B6FE61F95853D00EEC6BF /* AjustesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
 		2E8B6FE81F95855000EEC6BF /* TotalComprasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalComprasViewController.swift; sourceTree = "<group>"; };
+		2EAD3CDC1F9C89A100AD88C0 /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
+		2EAD3CE01F9C926D00AD88C0 /* ProductDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
+		2EAD3CE21F9CAA7500AD88C0 /* StateDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDAO.swift; sourceTree = "<group>"; };
+		2EAD3CE41F9D16DF00AD88C0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2EE191B71F7F26BB00F108B0 /* LuizFrancisco_Douglas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuizFrancisco_Douglas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE191BA1F7F26BB00F108B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EE191BF1F7F26BB00F108B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +60,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2EAD3CDF1F9C924700AD88C0 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2EAD3CE01F9C926D00AD88C0 /* ProductDAO.swift */,
+				2EAD3CE21F9CAA7500AD88C0 /* StateDAO.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		2EE191AE1F7F26BB00F108B0 = {
 			isa = PBXGroup;
 			children = (
@@ -71,12 +88,15 @@
 		2EE191B91F7F26BB00F108B0 /* LuizFrancisco_Douglas */ = {
 			isa = PBXGroup;
 			children = (
+				2EAD3CDF1F9C924700AD88C0 /* Database */,
 				2E8B6FE11F9584D800EEC6BF /* View */,
 				2EE191BA1F7F26BB00F108B0 /* AppDelegate.swift */,
 				2EE191BE1F7F26BB00F108B0 /* Main.storyboard */,
 				2EE191C11F7F26BB00F108B0 /* Assets.xcassets */,
 				2EE191C31F7F26BB00F108B0 /* LaunchScreen.storyboard */,
 				2EE191C61F7F26BB00F108B0 /* Info.plist */,
+				2EAD3CDB1F9C89A100AD88C0 /* ComprasUSA.xcdatamodeld */,
+				2EAD3CE41F9D16DF00AD88C0 /* Settings.bundle */,
 			);
 			path = LuizFrancisco_Douglas;
 			sourceTree = "<group>";
@@ -140,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAD3CE51F9D16DF00AD88C0 /* Settings.bundle in Resources */,
 				2EE191C51F7F26BB00F108B0 /* LaunchScreen.storyboard in Resources */,
 				2EE191C21F7F26BB00F108B0 /* Assets.xcassets in Resources */,
 				2EE191C01F7F26BB00F108B0 /* Main.storyboard in Resources */,
@@ -154,9 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8B6FE71F95853D00EEC6BF /* AjustesViewController.swift in Sources */,
+				2EAD3CDD1F9C89A100AD88C0 /* ComprasUSA.xcdatamodeld in Sources */,
 				2E8B6FE31F9584FE00EEC6BF /* ComprasTableViewController.swift in Sources */,
 				2EE191BB1F7F26BB00F108B0 /* AppDelegate.swift in Sources */,
+				2EAD3CE11F9C926D00AD88C0 /* ProductDAO.swift in Sources */,
 				2E8B6FE51F95853200EEC6BF /* CadastrarProdutoViewController.swift in Sources */,
+				2EAD3CE31F9CAA7500AD88C0 /* StateDAO.swift in Sources */,
 				2E8B6FE91F95855000EEC6BF /* TotalComprasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2EAD3CDB1F9C89A100AD88C0 /* ComprasUSA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2EAD3CDC1F9C89A100AD88C0 /* ComprasUSA.xcdatamodel */,
+			);
+			currentVersion = 2EAD3CDC1F9C89A100AD88C0 /* ComprasUSA.xcdatamodel */;
+			path = ComprasUSA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2EE191AF1F7F26BB00F108B0 /* Project object */;
 }

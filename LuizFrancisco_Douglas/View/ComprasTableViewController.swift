@@ -7,45 +7,56 @@
 //
 
 import UIKit
+import CoreData
 
 class ComprasTableViewController: UITableViewController {
 
+    let context: NSManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var products: [ProductMO] = []
+    var messageLabel: UILabel? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        messageLabel = UILabel.init(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+        messageLabel?.text = "Sua lista está vazia!"
+        messageLabel?.textAlignment = .center
+        messageLabel?.sizeToFit()
+        
+        products = ProductDAO.list(context: context)
+        if products.count > 0 {
+            tableView.backgroundView = nil
+        }
+        tableView.reloadData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        if products.count > 0 {
+            return 1
+        } else {
+            tableView.backgroundView = messageLabel!
+            return 0
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return products.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
+        cell.textLabel?.text = products[indexPath.row].name!
         return cell
     }
-    */
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -55,17 +66,25 @@ class ComprasTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            if ProductDAO.delete(context: context, product: products[indexPath.row]) {
+                products = ProductDAO.list(context: context)
+                tableView.reloadData()
+            }
+        }
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "CadastrarProdutoViewController") as! CadastrarProdutoViewController
+        vc.product = products[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
     /*
     // Override to support rearranging the table view.
